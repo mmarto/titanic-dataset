@@ -1,7 +1,9 @@
 'use strict'
 
-var titanic-app = angular.module('titanicApp', [
+angular.module('titanicApp', [
 'ngRoute',
 'ngResource',
 'survivor'
-]);
+]).config(['$routeProvider', function($routeProvider) {
+  $routeProvider.otherwise({redirectTo: '/survivor'});
+}]);

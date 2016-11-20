@@ -8,5 +8,5 @@ angular.module('survivor', [])
       })
   })
   .controller("survivor.controller", ["$scope", function($scope){
-      var a = 5;
+      $scope.a = 5;
   }])
