@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="titanicApp">
 <head>
     <meta charset="UTF-8">
     <title>Titanic Dataset</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="./static/angular.min.js" ></script>
-    <script src="./src/titanic-app.js"></script>
+    <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script -->
+    <script src="https://unpkg.com/ng-table@2.1.0/bundles/ng-table.js"></script>
+    <script src="./static/angular/angular.js"></script>
+    <script src="./static/angular-animate/angular-animate.js"></script>
+    <script src="./static/angular-route/angular-route.js"></script>
+    <script src="./static/angular-resource/angular-resource.js"></script>
     <script src="./src/survivor/survivor.js"></script>
+
+    <script src="./src/titanic-app.js"></script>
+
 </head>
 <body>
- <div ng-view>Loading</div>
+ <div ng-view class="view-frame">Loading</div>
 </body>
 </html>

@@ -1,2 +1,49 @@
-<input name="" ng-model="a">
-{{a}}
+<h1>Titanic Analisys</h1>
+
+<div>
+    <h2>Statistic nach geschlecht</h2>
+    <table ng-table="tableParams" show-filter="true">
+        <thead>
+            <th filter="{ sex: 'text'}" sortable="'sex'">
+                Geschlächt
+            </th>
+            <th filter="{ pclass: 'text'}" sortable="'pclass'">
+                Klasse
+            </th>
+            <th filter="{ age: 'text'}" sortable="'age'">
+                Alter
+            </th>
+            <th filter="{ survivals: 'text'}" sortable="'survivals'">
+                Überlebenden
+            </th>
+            <th filter="{ victims: 'text'}" sortable="'victims'">
+                Opfer
+            </th>
+            <th filter="{ percentage: 'text'}" sortable="'percentage'">
+                Überlebbungsquata
+            </th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in statistic">
+                <td>
+                   {{row.id}}
+                </td>
+                <td>
+                   {{row.pclass}}
+                </td>
+                <td>
+                   {{row.age}}
+                </td>
+                <td>
+                   {{row.survivals}}
+                </td>
+                <td>
+                   {{row.victims}}
+                </td>
+                <td>
+                   {{row.percentage}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
